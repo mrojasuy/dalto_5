@@ -1,0 +1,121 @@
+/* Modo Daltonico - CSS Filters for color-blind accessibility */
+
+/* Protanopia: cannot see red */
+body.md-protanopia {
+	filter: url('#md-protanopia-filter');
+}
+
+/* Deuteranopia: cannot see green */
+body.md-deuteranopia {
+	filter: url('#md-deuteranopia-filter');
+}
+
+/* Tritanopia: cannot see blue */
+body.md-tritanopia {
+	filter: url('#md-tritanopia-filter');
+}
+
+/* Floating toggle container */
+.md-toggle {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99999;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 6px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Active mode badge */
+.md-badge {
+	display: none;
+	background: #005fcc;
+	color: #fff;
+	font-size: 11px;
+	padding: 3px 10px;
+	border-radius: 12px;
+	white-space: nowrap;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	pointer-events: none;
+}
+
+.md-badge.md-visible {
+	display: block;
+}
+
+/* Bottom row: combo + button side by side */
+.md-controls {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/* Contrast type combo (native select) */
+.md-type-select {
+	height: 36px;
+	padding: 4px 8px;
+	font-size: 13px;
+	border: 2px solid #333;
+	border-radius: 6px;
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+	outline: none;
+	min-width: 140px;
+}
+
+.md-type-select:focus {
+	border-color: #005fcc;
+	box-shadow: 0 0 0 2px rgba(0, 95, 204, 0.3);
+}
+
+.md-type-select[disabled] {
+	opacity: 0.5;
+	cursor: default;
+}
+
+/* Toggle on/off button */
+.md-toggle-btn {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 2px solid #333;
+	background-color: #fff;
+	color: #333;
+	font-size: 22px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+	transition: background-color 0.2s, color 0.2s;
+	line-height: 1;
+	padding: 0;
+	flex-shrink: 0;
+}
+
+.md-toggle-btn:hover {
+	background-color: #e8e8e8;
+}
+
+.md-toggle-btn:focus {
+	outline: 2px solid #005fcc;
+	outline-offset: 2px;
+}
+
+.md-toggle-btn[aria-pressed="true"] {
+	background-color: #005fcc;
+	color: #fff;
+	border-color: #004aaa;
+}
+
+/* SVG filters container - hidden */
+.md-svg-filters {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}

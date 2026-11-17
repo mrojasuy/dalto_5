@@ -1,0 +1,18 @@
+<?php
+
+$s_plugin_ModoDaltonico_nombre = 'Color Blind Mode';
+$s_plugin_ModoDaltonico_descripcion = 'Accessible color customization plugin with visual aids for color-blind users';
+$s_plugin_ModoDaltonico_activar = 'Enable';
+$s_plugin_ModoDaltonico_desactivar = 'Disable';
+$s_plugin_ModoDaltonico_protanopia = 'Protanopia (cannot see red)';
+$s_plugin_ModoDaltonico_deuteranopia = 'Deuteranopia (cannot see green)';
+$s_plugin_ModoDaltonico_tritanopia = 'Tritanopia (cannot see blue)';
+$s_plugin_ModoDaltonico_guardar = 'Save';
+$s_plugin_ModoDaltonico_cancelar = 'Cancel';
+$s_plugin_ModoDaltonico_modo_activo = 'Color Blind Mode Active';
+$s_plugin_ModoDaltonico_modo_inactivo = 'Color Blind Mode Inactive';
+$s_plugin_ModoDaltonico_indicador_activo = 'Active';
+$s_plugin_ModoDaltonico_configuracion = 'Color Blind Mode';
+$s_plugin_ModoDaltonico_activado = 'Enabled';
+$s_plugin_ModoDaltonico_desactivado = 'Disabled';
+$s_plugin_ModoDaltonico_tipo_contraste = 'Contrast Type';
